@@ -37,40 +37,56 @@ footer {
   background-color: #eee;
   margin-top: 2rem;
 }
-/* Hide hamburger on desktop */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
+
+<!-- team members styling -->
+#team {
+  padding: 2rem;
+  background-color: #e6f0ff;
+  text-align: center;
 }
 
-/* Style nav for desktop */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+#team h2 {
+  margin-bottom: 1.5rem;
+  color: #004080;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    background-color: #004080;
-    position: absolute;
-    top: 3.5rem;
-    left: 0;
-    width: 100%;
-  }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-  nav.show {
-    display: flex;
-  }
+.team-member {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  .hamburger {
-    display: block;
-  }
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: 1.2rem;
+  color: #00264d;
+}
+
+.team-member p {
+  margin: 0;
+  color: #555;
+  font-style: italic;
 }
