@@ -93,7 +93,7 @@ footer {
 
 <!-- Background images for titles -->
 .hero-section {
-  background-image: url('bloodyBackground.jpg');
+  background-image: url('images/bloodyBackground.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;
