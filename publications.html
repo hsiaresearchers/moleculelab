@@ -7,8 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Publications</h1>
+    </div>
+  </section>
+  
   <header>
-    <h1>Publications</h1>
     <nav>
       <a href="index.html">About</a>
       <a href="team.html">Team</a>
@@ -18,13 +24,54 @@
     </nav>
   </header>
   <main>
-    <section>
-      <h2>Our Publications</h2>
-      <p>Browse our latest research papers.</p>
-    </section>
+    <section class="publications">
+    <div class="year-section">
+      <button class="expand-btn" aria-expanded="false">2025 ▼</button>
+      <div class="content" hidden>
+        <ul>
+          <li>Publication Title 1 (Author, Journal)</li>
+          <li>Publication Title 2 (Author, Journal)</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="year-section">
+      <button class="expand-btn" aria-expanded="false">2024 ▼</button>
+      <div class="content" hidden>
+        <ul>
+          <li>Publication Title A (Author, Journal)</li>
+          <li>Publication Title B (Author, Journal)</li>
+        </ul>
+      </div>
+    </div>
+  
+  </section>
   </main>
+
+  
   <footer>
     <p>© 2025 Our Research Lab</p>
   </footer>
 </body>
 </html>
+
+<script>
+  const buttons = document.querySelectorAll('.expand-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const isHidden = content.hasAttribute('hidden');
+
+      if (isHidden) {
+        content.removeAttribute('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        button.textContent = button.textContent.replace('▼', '▲');
+      } else {
+        content.setAttribute('hidden', '');
+        button.setAttribute('aria-expanded', 'false');
+        button.textContent = button.textContent.replace('▲', '▼');
+      }
+    });
+  });
+</script>
