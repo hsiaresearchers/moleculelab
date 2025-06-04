@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <section class="landing-hero">
+  `<div class="floating-elements"></div>
+  `<div class="hero-content">
+    <h1>Welcome to our Lab</h1>
+    <p>Exploring hematology through innovation, research, and collaboration.</p>
+  `</div>
+`</section>
+
     <div class="hero-image">
       <div class="hero-text">
         <h1>The MOLECULE Lab</h1>
@@ -31,5 +39,16 @@
   <footer>
     <p>© 2025 MOLECULE Lab</p>
   </footer>
+  
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('.hero-content', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '50px',
+        reset: false
+      });
+    </script>
+
 </body>
 </html>
