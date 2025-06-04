@@ -89,19 +89,19 @@ footer {
 }
 
 /* Each cell gets a slightly different position and timing */
-.cell1 { top: 30%; left: 2%; animation-duration: 20s; }
-.cell2 { top: 30%; right: 2%; animation-duration: 25s; }
-.cell3 { top: 60%; left: 50%; animation-duration: 30s; }
-.cell4 { top: 80%; right: 50%; animation-duration: 35s; }
-.cell5 { top: 10%; left: 20%; animation-duration: 20s; }
-.cell6 { top: 10%; right: 60%; animation-duration: 25s; }
-.cell7 { top: 50%; left: 5%; animation-duration: 30s; }
-.cell8 { top: 40%; right: 70%; animation-duration: 35s; }
-.cell9 { top: 90%; right: 30%; animation-duration: 35s; }
-.cell10 { top: 25%; left: 25%; animation-duration: 20s; }
-.cell11 { top: 10%; right: 69%; animation-duration: 25s; }
-.cell12 { top: 55%; left: 9%; animation-duration: 30s; }
-.cell13 { top: 46%; right: 72%; animation-duration: 35s; }
+.cell1 { top: 5%; left: 2%; animation-duration: 20s; }
+.cell2 { top: 10%; right: 5%; animation-duration: 25s; }
+.cell3 { top: 20%; left: 30%; animation-duration: 30s; }
+.cell4 { top: 30%; right: 40%; animation-duration: 35s; }
+.cell5 { top: 40%; left: 20%; animation-duration: 20s; }
+.cell6 { top: 50%; right: 50%; animation-duration: 25s; }
+.cell7 { top: 60%; left: 5%; animation-duration: 30s; }
+.cell8 { top: 70%; right: 70%; animation-duration: 35s; }
+.cell9 { top: 80%; right: 60%; animation-duration: 35s; }
+.cell10 { top: 90%; left: 25%; animation-duration: 20s; }
+.cell11 { top: 95%; right: 65%; animation-duration: 25s; }
+.cell12 { top: 25%; left: 10%; animation-duration: 30s; }
+.cell13 { top: 45%; right: 75%; animation-duration: 35s; }
 
 
 @keyframes float-cell {
