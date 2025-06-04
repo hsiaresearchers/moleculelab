@@ -197,5 +197,40 @@ body, html {
     transform: translateY(-100px) translateX(50px);
   }
 }
+.floating-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-cell {
+  position: absolute;
+  width: 50px;
+  animation: float infinite ease-in-out;
+}
+
+.cell1 {
+  top: 20%;
+  left: 10%;
+  animation-duration: 15s;
+}
+
+.cell2 {
+  top: 50%;
+  left: 70%;
+  animation-duration: 20s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) translateX(10px) rotate(180deg); }
+  100% { transform: translateY(0px) translateX(0px) rotate(360deg); }
+}
+
 
 
