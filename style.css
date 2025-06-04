@@ -94,7 +94,7 @@ footer {
 .cell3 { top: 70%; left: 30%; animation-duration: 30s; }
 .cell4 { top: 10%; left: 80%; animation-duration: 35s; }
 
-/* Float animation */
+
 @keyframes float-cell {
   0% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-40px) rotate(180deg); }
