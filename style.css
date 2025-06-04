@@ -98,6 +98,11 @@ footer {
 .cell7 { top: 50%; left: 5%; animation-duration: 30s; }
 .cell8 { top: 40%; right: 70%; animation-duration: 35s; }
 .cell9 { top: 90%; right: 30%; animation-duration: 35s; }
+.cell10 { top: 25%; left: 25%; animation-duration: 20s; }
+.cell11 { top: 10%; right: 69%; animation-duration: 25s; }
+.cell12 { top: 55%; left: 9%; animation-duration: 30s; }
+.cell13 { top: 46%; right: 72%; animation-duration: 35s; }
+
 
 @keyframes float-cell {
   0% { transform: translateY(0px) rotate(0deg); }
