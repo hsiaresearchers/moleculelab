@@ -7,23 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="landing-hero">
-  <div class="floating-elements"></div>
-   <div class="hero-content">
-    <h1>Welcome to our Lab</h1>
-    <p>Exploring hematology through innovation, research, and collaboration.</p>
-   </div>
- </section>
 
+  <!-- Floating background elements -->
   <div class="floating-background">
     <img src="images/redBloodCell.png" class="floating-cell cell1" alt="Red Blood Cell">
     <img src="images/whiteBloodCell.png" class="floating-cell cell2" alt="White Blood Cell">
-    <img src="images/redBloodCell.png" class="floating-cell cell1" alt="Red Blood Cell">
-    <img src="images/whiteBloodCell.png" class="floating-cell cell2" alt="White Blood Cell">
-    <img src="images/redBloodCell.png" class="floating-cell cell1" alt="Red Blood Cell">
-    <img src="images/whiteBloodCell.png" class="floating-cell cell2" alt="White Blood Cell">
+    <img src="images/redBloodCell.png" class="floating-cell cell3" alt="Red Blood Cell">
+    <img src="images/whiteBloodCell.png" class="floating-cell cell4" alt="White Blood Cell">
   </div>
 
+  <!-- Hero section -->
+  <section class="landing-hero">
+    <div class="hero-content">
+      <h1>Welcome to our Lab</h1>
+      <p>Exploring hematology through innovation, research, and collaboration.</p>
+    </div>
+  </section>
+
+  <!-- Navigation -->
   <header>
     <nav>
       <a href="index.html">About</a>
@@ -33,26 +34,30 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  
+
+  <!-- Main content -->
   <main>
     <section>
       <h2>About Our Research</h2>
-      <p>We are...</p>
+      <p>We are committed to the future of hematology, combining computational biology, cell studies, and collaborative approaches.</p>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 MOLECULE Lab</p>
   </footer>
-  
+
+  <!-- Scroll Reveal Animation -->
   <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal().reveal('.hero-content', {
-        duration: 1000,
-        origin: 'bottom',
-        distance: '50px',
-        reset: false
-      });
-    </script>
+  <script>
+    ScrollReveal().reveal('.hero-content', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      reset: false
+    });
+  </script>
 
 </body>
 </html>
