@@ -89,10 +89,10 @@ footer {
 }
 
 /* Each cell gets a slightly different position and timing */
-.cell1 { top: 20%; left: 10%; animation-duration: 20s; }
-.cell2 { top: 40%; left: 60%; animation-duration: 25s; }
-.cell3 { top: 70%; left: 30%; animation-duration: 30s; }
-.cell4 { top: 10%; left: 80%; animation-duration: 35s; }
+.cell1 { top: 30%; left: 2%; animation-duration: 20s; }
+.cell2 { top: 30%; right: 2%; animation-duration: 25s; }
+.cell3 { top: 60%; left: 5%; animation-duration: 30s; }
+.cell4 { top: 80%; right: 5%; animation-duration: 35s; }
 
 
 @keyframes float-cell {
