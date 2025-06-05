@@ -59,7 +59,7 @@
   <!-- Scroll to reveal white title and description hero text -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
-    ScrollReveal().reveal('.hero-text', {
+      ScrollReveal().reveal('.hero-text', {
       duration: 2000,
       origin: 'bottom',
       distance: '100px',
@@ -72,13 +72,11 @@
   <script>
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".transition-fade", {
-      background: "linear-gradient(to bottom, #FFDEAD, #1f2937)", 
-      scrollTrigger: {
-        trigger: ".transition-fade",
-        start: "top center",
-        end: "bottom top",
-        scrub: true,
-      }
+      scrollTrigger: ".transition-fade" {
+      start: "top center",
+      end: "bottom top",
+      scrub: true,
+    }
     });
   </script>
 
