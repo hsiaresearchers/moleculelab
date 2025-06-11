@@ -23,20 +23,42 @@ header h1 {
 }
 
 nav {
-  margin-top: 0.5rem;
-  outline-style: groove; 
-  outline-color: black;
-  outline-size: thin;
+  background-color: #971622;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #c43737;
 }
 
 nav a {
   color: #fff;
-  margin: 0 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   text-decoration: none;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #fddede;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 main {
@@ -224,7 +246,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 4rem;
 }
 
 .milestone-cards {
