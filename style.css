@@ -223,6 +223,8 @@ footer {
   color: #971622;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .milestone-cards {
