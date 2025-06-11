@@ -246,7 +246,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
-  padding-left: 4rem;
+  padding-left: 10rem;
 }
 
 .milestone-cards {
@@ -259,7 +259,7 @@ footer {
 
 .milestone {
   background: #fff;
-  border-left: 6px solid #ff7f50; /* coral accent */
+  border-left: 6px solid #971622; /* red accent */
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 8px 20px rgba(255, 127, 80, 0.2);
