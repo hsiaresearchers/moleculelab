@@ -239,15 +239,23 @@ footer {
   margin-top: 3rem;
 }
 
+.accomplishments-title-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10rem; /* This creates the indent */
+  text-align: left;
+}
+
 #accomplishments h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #971622;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-left: 0; /* Remove padding here */
   text-align: left;
-  padding-left: 10rem;
 }
+
 
 .milestone-cards {
   display: grid;
