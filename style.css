@@ -207,3 +207,33 @@ footer {
   50% { transform: translateY(-40px) rotate(180deg); }
   100% { transform: translateY(0px) rotate(360deg); }
 }
+
+
+#accomplishments {
+  padding: 2rem;
+  background-color: #f0f8ff; /* soft blue */
+  text-align: center;
+  border-top: 2px solid #971622;
+  margin-top: 2rem;
+}
+
+#accomplishments h2 {
+  color: #00264d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#accomplishments ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+#accomplishments li {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
