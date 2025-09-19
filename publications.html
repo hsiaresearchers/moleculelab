@@ -5,116 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Publications</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("images/lab-banner.jpg") center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #004080;
-    }
-
-    h3 {
-      margin-top: 2rem;
-      font-size: 1.4rem;
-      color: #222;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.8rem;
-      line-height: 1.5;
-    }
-
-    .year-section {
-      margin-top: 1rem;
-    }
-
-    .expand-btn {
-      background: #004080;
-      color: #fff;
-      border: none;
-      padding: 0.6rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      font-weight: 500;
-      margin-bottom: 0.8rem;
-    }
-
-    .expand-btn:hover {
-      background: #003060;
-    }
-
-    footer {
-      background: #222;
-      color: #bbb;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
 </head>
 
 <body>
+  <!-- Hero image -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>📖 Publications</h1>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <header>
-    <div class="logo">The Chin-Yee & Hsia Hematology Lab</div>
     <nav>
       <a href="index.html">About</a>
       <a href="team.html">Team</a>
@@ -123,86 +25,128 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>📖 Publications</h1>
-  </div>
-
   <main>
     <!-- Introduction -->
-    <section>
+    <section class="fellowship-card">
       <h2>Introduction</h2>
       <p>
-        The Chin-Yee & Hsia Hematology Research Lab is dedicated to advancing the understanding, diagnosis, 
-        and treatment of blood disorders through rigorous clinical and translational research. 
-        Below is a selection of highlights showcasing our impact, followed by comprehensive publication lists 
-        for Dr. Benjamin Chin-Yee and Dr. Cyrus Hsia.
+        The Chin-Yee & Hsia Hematology Research Lab is dedicated to advancing the 
+        understanding, diagnosis, and treatment of blood disorders through rigorous 
+        clinical and translational research. Below is a selection of highlights 
+        showcasing our impact, followed by comprehensive publication lists for 
+        Dr. Benjamin Chin-Yee and Dr. Cyrus Hsia.
       </p>
     </section>
 
     <!-- Selected Highlights -->
-    <section>
-      <h2>🔬 Selected Highlights</h2>
-      <ul>
-        <li>Cancer Labeling, Risk Perception, and Treatment Choices in Clonal Cytopenia of Undetermined Significance. <em>JAMA Network Open</em>. 2025;8(7):e2523733. (Chin-Yee B, Latham AJ, Varga S)</li>
-        <li>SGLT2i-associated erythrocytosis: Closing the evidence gap. <em>Blood Advances</em>. 2025;9(16):4321-4322. (Chin-Yee B; Hsia CC)</li>
-        <li>A Single-Center Retrospective Study of the Investigation of Monoclonal B-Cell Lymphocytosis (MBL) and Chronic Lymphocytic Leukemia (CLL) in Southwestern Ontario: Are We Over-Investigating? <em>Int J Lab Hematol</em>. 2025;47(5):891-897. (Hoxha O; Lad M; Hedley BD; Chin-Yee B; Hsia CC; et al.)</li>
-        <li>Eltrombopag versus intravenous immunoglobulin for first-line treatment of immune thrombocytopenia: a randomized trial. <em>Lancet Haematol</em>. 2020;7(9):e640-e648. (Hsia CC, co-investigator)</li>
-        <li>Erythrocytosis associated with sodium–glucose cotransporter 2 inhibitors: case series and literature review. <em>CMAJ</em>. 2020;192(7):E171-E175. (Chin-Yee B, first author)</li>
-        <li>Next-generation sequencing panels for hematologic malignancies: implementation and clinical impact. <em>Eur J Haematol</em>. 2019;103(6):599-606. (Chin-Yee B, first author)</li>
-      </ul>
+    <section class="fellowship-card fellowship-card--with-media">
+      <div class="fellowship-card__content">
+        <h2>🔬 Selected Highlights</h2>
+        <ul>
+          <li><strong>Cancer Labeling, Risk Perception, and Treatment Choices in Clonal Cytopenia of Undetermined Significance.</strong> <em>JAMA Network Open</em>. 2025;8(7):e2523733. (Chin-Yee B, Latham AJ, Varga S)</li>
+          <li><strong>SGLT2i-associated erythrocytosis: Closing the evidence gap.</strong> <em>Blood Advances</em>. 2025;9(16):4321-4322. (Chin-Yee B; Hsia CC)</li>
+          <li><strong>A Single-Center Retrospective Study of the Investigation of Monoclonal B-Cell Lymphocytosis (MBL) and Chronic Lymphocytic Leukemia (CLL) in Southwestern Ontario: Are We Over-Investigating?</strong> <em>Int J Lab Hematol</em>. 2025;47(5):891-897. (Hoxha O; Lad M; Hedley BD; Chin-Yee B; Hsia CC; et al.)</li>
+          <li><strong>Eltrombopag versus intravenous immunoglobulin for first-line treatment of immune thrombocytopenia: a randomized trial.</strong> <em>Lancet Haematol</em>. 2020;7(9):e640-e648. (Hsia CC, co-investigator)</li>
+          <li><strong>Erythrocytosis associated with sodium–glucose cotransporter 2 inhibitors: case series and literature review.</strong> <em>CMAJ</em>. 2020;192(7):E171-E175. (Chin-Yee B, first author)</li>
+          <li><strong>Next-generation sequencing panels for hematologic malignancies: implementation and clinical impact.</strong> <em>Eur J Haematol</em>. 2019;103(6):599-606. (Chin-Yee B, first author)</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Full Publications -->
-    <section>
+    <section class="fellowship-card">
       <h2>📚 Full Publications</h2>
 
+      <!-- Dr. Benjamin Chin-Yee -->
       <h3>Dr. Benjamin Chin-Yee</h3>
-      <div class="year-section">
-        <button class="expand-btn" aria-expanded="false">2025 ▼</button>
-        <div class="content" hidden>
-          <ul>
-            <li>Chin-Yee B; Latham AJ; Varga S. Cancer Labeling, Risk Perception, and Treatment Choices in Clonal Cytopenia of Undetermined Significance. <em>JAMA Network Open</em>. 2025;8(7):e2523733.</li>
-            <li>Chin-Yee B; Hsia CC. SGLT2i-associated erythrocytosis: Closing the evidence gap. <em>Blood Advances</em>. 2025;9(16):4321-4322.</li>
-            <li>Hoxha O; Lad M; Hedley BD; Chin-Yee B; Hsia CC; et al. A Single-Center Retrospective Study of the Investigation of Monoclonal B-Cell Lymphocytosis (MBL) and Chronic Lymphocytic Leukemia (CLL) in Southwestern Ontario: Are We Over-Investigating? <em>Int J Lab Hematol</em>. 2025;47(5):891-897.</li>
-          </ul>
-        </div>
-      </div>
+      <details>
+        <summary>2025</summary>
+        <ul>
+          <li>Chin-Yee B; Latham AJ; Varga S. <em>JAMA Network Open</em>. 2025;8(7):e2523733.</li>
+          <li>Chin-Yee B; Hsia CC. <em>Blood Advances</em>. 2025;9(16):4321-4322.</li>
+          <li>Hoxha O; Lad M; Hedley BD; Chin-Yee B; Hsia CC; et al. <em>Int J Lab Hematol</em>. 2025;47(5):891-897.</li>
+        </ul>
+      </details>
 
-      <div class="year-section">
-        <button class="expand-btn" aria-expanded="false">2024 ▼</button>
-        <div class="content" hidden>
-          <ul>
-            <li>Chin-Yee B, et al. Communication and decision-making between laboratory and clinic in hematology practice. <em>Am J Hematol</em>. 2024.</li>
-          </ul>
-        </div>
-      </div>
+      <details>
+        <summary>2024</summary>
+        <ul>
+          <li>Chin-Yee B, et al. Communication and decision-making between laboratory and clinic in hematology practice. <em>Am J Hematol</em>. 2024.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2020</summary>
+        <ul>
+          <li>Chin-Yee B, et al. Erythrocytosis associated with sodium–glucose cotransporter 2 inhibitors: case series and literature review. <em>CMAJ</em>. 2020;192(7):E171-E175.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2019</summary>
+        <ul>
+          <li>Chin-Yee B, et al. Next-generation sequencing panels for hematologic malignancies: implementation and clinical impact. <em>Eur J Haematol</em>. 2019;103(6):599-606.</li>
+        </ul>
+      </details>
+
+      <p><em>Other Contributions (2019–2025):</em> Publications and presentations on diagnostic test utilization, Choosing Wisely Hematology, and laboratory–clinic communication in patient care.</p>
+
+      <!-- Dr. Cyrus Hsia -->
+      <h3>Dr. Cyrus Hsia</h3>
+      <details>
+        <summary>2025</summary>
+        <ul>
+          <li>Chin-Yee B; Hsia CC. <em>Blood Advances</em>. 2025;9(16):4321-4322.</li>
+          <li>Hoxha O; Lad M; Hedley BD; Chin-Yee B; Hsia CC; et al. <em>Int J Lab Hematol</em>. 2025;47(5):891-897.</li>
+          <li>Hsia CC, et al. Secondary erythrocytosis management practices in Canada: a tertiary center review. [In submission].</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2023</summary>
+        <ul>
+          <li>Hsia CC, et al. Evaluation of anticoagulation practices in hospitalized patients with hematologic disorders. <em>Thrombosis Research</em>. 2023.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2022</summary>
+        <ul>
+          <li>Hsia CC, et al. Guidelines for thrombosis management in hematology: a Canadian perspective. <em>Canadian Journal of Hematology</em>. 2022.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2021</summary>
+        <ul>
+          <li>Hsia CC, et al. Optimizing anticoagulant use in cancer-associated thrombosis: outcomes from a real-world cohort. <em>J Thromb Haemost</em>. 2021.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2020</summary>
+        <ul>
+          <li>Cheng G, Saleh MN, Marcher C, Hsia CC, et al. Eltrombopag versus intravenous immunoglobulin for first-line treatment of immune thrombocytopenia: a randomized trial. <em>Lancet Haematol</em>. 2020;7(9):e640-e648.</li>
+          <li>Maybury B; Hsia CC, et al. Management practices in secondary erythrocytosis: cohort data from two UK centers. <em>Br J Haematol</em>. 2020.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>2019</summary>
+        <ul>
+          <li>Hsia CC, et al. Risk stratification and management of bleeding in patients on anticoagulation therapy. <em>Ann Hematol</em>. 2019.</li>
+        </ul>
+      </details>
+
+      <p><em>Other Contributions (2019–2025):</em> Multiple peer-reviewed studies and national guideline contributions in anticoagulation, thrombosis management, and hematology clinical practice.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© The Chin-Yee & Hsia Hematology Research Lab</p>
+    <p>© 2025 Chin-Yee & Hsia Hematology Research Lab</p>
   </footer>
-
-  <script>
-    const buttons = document.querySelectorAll('.expand-btn');
-
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        const isHidden = content.hasAttribute('hidden');
-
-        if (isHidden) {
-          content.removeAttribute('hidden');
-          button.setAttribute('aria-expanded', 'true');
-          button.textContent = button.textContent.replace('▼', '▲');
-        } else {
-          content.setAttribute('hidden', '');
-          button.setAttribute('aria-expanded', 'false');
-          button.textContent = button.textContent.replace('▲', '▼');
-        }
-      });
-    });
-  </script>
 </body>
 </html>
+
 
