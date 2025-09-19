@@ -5,19 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Team</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: var(--dark-color, #222);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/lab-banner.jpg") center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      color: var(--primary-color, #004080);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .team-member {
+      text-align: center;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Lead images larger with accent border */
+    .lead img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--primary-color, #004080);
+      margin-bottom: 1rem;
+    }
+
+    /* Rui smaller than Leads */
+    .coordinator img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--accent-color, #888);
+      margin-bottom: 1rem;
+    }
+
+    /* Students – no hover */
+    .student img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .team-member h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .team-member p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      background: var(--dark-color, #222);
+      color: #bbb;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Hero Image -->
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1>👩‍🔬 Our Team</h1>
-      <p>Meet the people behind the Chin-Yee & Hsia Hematology Research Lab</p>
-    </div>
-  </div>
-
-  <!-- Navigation -->
   <header>
+    <div class="logo">The Chin-Yee & Hsia Hematology Lab</div>
     <nav>
       <a href="index.html">About</a>
       <a href="team.html" class="active">Team</a>
@@ -26,68 +140,87 @@
     </nav>
   </header>
 
+  <div class="hero">
+    <h1>Meet Our Team</h1>
+  </div>
+
   <main>
     <!-- Leads -->
-    <section class="team-section">
-      <h2>Lab Leads</h2>
+    <section>
+      <h2>Leads</h2>
       <div class="team-grid">
-        <div class="team-card highlight">
-          <h3>Dr. Benjamin Chin-Yee</h3>
-          <p><em>Principal Investigator</em></p>
-          <p>Focuses on clinical hematology and translational research, with expertise in diagnostic test utilization and biomarker-driven decision-making.</p>
+        <div class="team-member lead">
+          <a href="cyrus.html">
+            <img src="images/CyrusProfilePic.png" alt="Dr. Cyrus Hsia">
+            <h3>Dr. Cyrus Hsia</h3>
+            <p>Hematologist<br>Principal Investigator</p>
+          </a>
         </div>
-        <div class="team-card highlight">
-          <h3>Dr. Cyrus Hsia</h3>
-          <p><em>Principal Investigator</em></p>
-          <p>Specialist in hematology with extensive contributions to thrombosis management, anticoagulation, and national clinical guidelines.</p>
+        <div class="team-member lead">
+          <a href="benC.html">
+            <img src="images/BenProfilePic.jpg" alt="Dr. Ben Chin-Yee">
+            <h3>Dr. Ben Chin-Yee</h3>
+            <p>Hematologist<br>Principal Investigator</p>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Coordinator -->
-    <section class="team-section">
+    <section>
       <h2>Coordinator</h2>
       <div class="team-grid">
-        <div class="team-card">
-          <h3>Rui</h3>
-          <p><em>Lab Coordinator</em></p>
-          <p>Supports project coordination, operations, and collaboration between researchers and clinicians.</p>
+        <div class="team-member coordinator">
+          <a href="rui.html">
+            <img src="images/RuiProfilePic.jpg" alt="Rui Su">
+            <h3>Rui Su</h3>
+            <p>Lab Coordinator</p>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Students -->
-    <section class="team-section">
-      <h2>Student Researchers</h2>
+    <section>
+      <h2>Students</h2>
       <div class="team-grid">
-        <div class="team-card">
-          <h3>Jenyvette</h3>
-          <p><em>Student Researcher</em></p>
+        <div class="team-member student">
+          <a href="ella.html">
+            <img src="images/EllaProfilePic.jpg" alt="Ella Derkzen">
+            <h3>Ella Derkzen</h3>
+            <p>Intern<br>Mechatronics & AI Engineering Student</p>
+          </a>
         </div>
-        <div class="team-card">
-          <h3>Ella</h3>
-          <p><em>Student Researcher</em></p>
+        <div class="team-member student">
+          <a href="jenyvette.html">
+            <img src="images/JenyvetteProfilePic.jpg" alt="Jenyvette Hsia">
+            <h3>Jenyvette Hsia</h3>
+            <p>Intern<br>Mechatronics & AI Engineering Student</p>
+          </a>
         </div>
-        <div class="team-card">
-          <h3>Ojan</h3>
-          <p><em>Student Researcher</em></p>
+        <div class="team-member student">
+          <img src="m.jpg" alt="Sara Sadeghi Fard">
+          <h3>Sara Sadeghi Fard</h3>
+          <p>SRTP Student<br>1st Year UWO Medical Student</p>
         </div>
-        <div class="team-card">
-          <h3>Fatima</h3>
-          <p><em>Student Researcher</em></p>
+        <div class="team-member student">
+          <img src="m.jpg" alt="Fatima Khaliq">
+          <h3>Fatima Khaliq</h3>
+          <p>SRTP Student<br>1st Year UWO Medical Student</p>
         </div>
-        <div class="team-card">
-          <h3>Sara</h3>
-          <p><em>Student Researcher</em></p>
+        <div class="team-member student">
+          <img src="m.jpg" alt="Ojan Khosravifar">
+          <h3>Ojan Khosravifar</h3>
+          <p>SRTP Student<br>1st Year UWO Medical Student</p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Chin-Yee & Hsia Hematology Research Lab</p>
+    <p>© The Chin-Yee & Hsia Hematology Research Lab</p>
   </footer>
 </body>
 </html>
+
 
