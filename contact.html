@@ -5,22 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Join Us</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    header {
+      background: var(--dark-color, #222);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: var(--primary-color, #fff);
+    }
+
+    header nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- Hero image -->
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1>Get Involved</h1>
-    </div>
-  </div>
-
-  <!-- Navigation -->
+  <!-- Navigation with Join Us on the left -->
   <header> 
+    <div class="logo">Join Us</div>
     <nav>
       <a href="index.html">About</a>
       <a href="team.html">Team</a>
       <a href="publications.html">Publications</a>
-      <a href="contact.html">Get Involved</a>
+      <a href="contact.html" class="active">Get Involved</a>
     </nav>
   </header>
 
@@ -70,4 +91,5 @@
   </footer>
 </body>
 </html>
+
 
