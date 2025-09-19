@@ -544,4 +544,142 @@ footer {
 
  }
 
+ 
+.fellowship-card {
+  --card-radius: 16px;
+  --card-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  --overlay: linear-gradient(
+    135deg,
+    rgba(100, 29, 36, 0.06) 0%,
+    rgba(181, 82, 57, 0.06) 35%,
+    rgba(75, 83, 32, 0.06) 100%
+  );
+ 
+  position: relative;
+  background:
+    var(--overlay),
+    var(--sand);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: clamp(1.25rem, 2vw, 2rem);
+  margin: 2rem auto;
+  max-width: 980px;
+  isolation: isolate;
+}
+ 
+.fellowship-card__content {
+  display: grid;
+  gap: 0.9rem;
+}
+ 
+.fellowship-card__title {
+  margin: 0;
+  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  color: var(--red-anchor);
+  letter-spacing: 0.2px;
+}
+ 
+.fellowship-card__text {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.55;
+}
+ 
+/* Optional subtle badge */
+.fellowship-card::before {
+  content: "Recruiting";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #e9d9c7; /* badge bg from earlier */
+  color: var(--red-anchor);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.6px;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+ 
+/* Apply button (reuses your button baseline if present) */
+.btn--apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  background: var(--terra);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(181, 82, 57, 0.24);
+  transition: background-color .2s ease, transform .02s ease-in-out, box-shadow .2s ease, opacity .2s ease;
+}
+ 
+.btn--apply:hover {
+  background: #944630; /* terra hover from tokens */
+  box-shadow: 0 10px 22px rgba(181, 82, 57, 0.28);
+}
+ 
+.btn--apply:active {
+  transform: translateY(1px);
+}
+ 
+.btn--apply:focus-visible {
+  outline: 3px solid rgba(181, 82, 57, 0.35); /* focus ring */
+  outline-offset: 3px;
+}
+ 
+/* Responsive layout upgrade (optional): media + image slot */
+.fellowship-card--with-media {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+.fellowship-card--with-media .fellowship-card__media {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--cream);
+}
+@media (min-width: 880px) {
+  .fellowship-card--with-media {
+    grid-template-columns: 1.2fr 1fr; /* text | media */
+    align-items: center;
+  }
+}
+ 
+/* Optional subtle animation entrance */
+@media (prefers-reduced-motion: no-preference) {
+  .fellowship-card {
+    animation: cardFadeIn .5s ease both;
+  }
+  @keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
+ 
+/* Dark mode polish (respects your existing dark scheme if any) */
+@media (prefers-color-scheme: dark) {
+  .fellowship-card {
+    background:
+      var(--overlay),
+      var(--card-bg);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  }
+  .fellowship-card__title { color: #f4d7cd; } /* softened anchor for contrast */
+  .fellowship-card::before {
+    background: var(--badge-bg);
+    color: var(--badge-text);
+    border-color: var(--border);
+  }
+  .btn--apply {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+  }
+}
 
