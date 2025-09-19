@@ -35,8 +35,7 @@
     }
 
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("images/lab-banner.jpg") center/cover no-repeat;
+      background: var(--terra); /* Solid orange background */
       color: #fff;
       text-align: center;
       padding: 4rem 2rem;
@@ -89,7 +88,7 @@
       margin-bottom: 1rem;
     }
 
-    /* Rui smaller than Leads */
+    /* Coordinator smaller than Leads */
     .coordinator img {
       width: 140px;
       height: 140px;
@@ -99,7 +98,7 @@
       margin-bottom: 1rem;
     }
 
-    /* Students – no hover */
+    /* Students – no hover and not clickable */
     .student img {
       width: 120px;
       height: 120px;
@@ -185,18 +184,14 @@
       <h2>Students</h2>
       <div class="team-grid">
         <div class="team-member student">
-          <a href="ella.html">
-            <img src="images/EllaProfilePic.jpg" alt="Ella Derkzen">
-            <h3>Ella Derkzen</h3>
-            <p>Intern<br>Mechatronics & AI Engineering Student</p>
-          </a>
+          <img src="images/EllaProfilePic.jpg" alt="Ella Derkzen">
+          <h3>Ella Derkzen</h3>
+          <p>Intern<br>Mechatronics & AI Engineering Student</p>
         </div>
         <div class="team-member student">
-          <a href="jenyvette.html">
-            <img src="images/JenyvetteProfilePic.jpg" alt="Jenyvette Hsia">
-            <h3>Jenyvette Hsia</h3>
-            <p>Intern<br>Mechatronics & AI Engineering Student</p>
-          </a>
+          <img src="images/JenyvetteProfilePic.jpg" alt="Jenyvette Hsia">
+          <h3>Jenyvette Hsia</h3>
+          <p>Intern<br>Mechatronics & AI Engineering Student</p>
         </div>
         <div class="team-member student">
           <img src="m.jpg" alt="Sara Sadeghi Fard">
@@ -222,5 +217,4 @@
   </footer>
 </body>
 </html>
-
 
