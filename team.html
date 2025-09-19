@@ -5,6 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Team</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra styling to highlight lead members */
+    .lead-member {
+      grid-column: span 2; /* make them take more space */
+      text-align: center;
+    }
+    .lead-member img {
+      width: 250px; /* bigger image */
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .lead-member h3 {
+      font-size: 1.8em;
+      color: #2c3e50;
+    }
+    .lead-member p {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    /* Regular team members stay smaller */
+    .team-member img {
+      width: 150px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,46 +52,33 @@
     <section id="team">
       <div class="team-grid">
         
-        <div class="team-member">
+        <!-- Highlighted Lead Member: Cyrus -->
+        <div class="team-member lead-member">
           <a href="cyrus.html"> 
             <img src="images/CyrusProfilePic.png" alt="Dr. Cyrus Hsia" />
             <h3>Dr. Cyrus Hsia</h3>
-            <p>Hematologist. Principal Investigator</p>
+            <p>Hematologist · Principal Investigator</p>
           </a>
         </div>
         
-        <div class="team-member">
+        <!-- Highlighted Lead Member: Ben -->
+        <div class="team-member lead-member">
           <a href="benC.html">
-            <img src="images/BenProfilePic.jpg" alt="Dr. Ben Chin-yee" />
-            <h3>Dr. Ben Chin-yee</h3>
+            <img src="images/BenProfilePic.jpg" alt="Dr. Ben Chin-Yee" />
+            <h3>Dr. Ben Chin-Yee</h3>
             <p>Hematologist</p>
           </a>
         </div>
         
+        <!-- Regular members -->
         <div class="team-member">
           <a href="rui.html">
             <img src="images/RuiProfilePic.jpg" alt="Rui Su" />
             <h3>Rui Su</h3>
-            <p>Coordinator. Description</p>
+            <p>Coordinator · Description</p>
           </a>
         </div>
 
-        <div class="team-member">
-          <a href="jenny.html">
-            <img src="images/JennyProfilePic.jpg" alt="Jenny Ho" />
-            <h3>Dr. Jenny Ho</h3>
-            <p>Hematologist</p>
-          </a>
-        </div>
-
-        <div class="team-member">
-          <a href="benH.html">
-            <img src="images/BenHProfilePic.jpg" alt="Ben Hedley" />
-            <h3>Dr. Ben Hedley</h3>
-            <p>Hematology scientist and engineer</p>
-          </a>
-        </div>
-        
         <div class="team-member">
           <a href="ella.html">
             <img src="images/EllaProfilePic.jpg" alt="Ella Derkzen" />
@@ -104,7 +117,6 @@
     </section>
   </main>
 
-  
   <footer>
     <p>© The Chin-Yee & Hsia Hematology Research Lab</p>
   </footer>
