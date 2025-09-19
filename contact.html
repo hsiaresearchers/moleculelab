@@ -3,110 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Get Involved</title>
+  <title>Join Us</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("images/lab-banner.jpg") center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #004080;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #222;
-    }
-
-    .apply {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .apply strong {
-      color: #004080;
-    }
-
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 12px;
-      margin-top: 1rem;
-    }
-
-    footer {
-      background: #222;
-      color: #bbb;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
 </head>
-
 <body>
-  <header>
-    <div class="logo">The Chin-Yee & Hsia Hematology Lab</div>
+  <!-- Hero image -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Get Involved</h1>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header> 
     <nav>
       <a href="index.html">About</a>
       <a href="team.html">Team</a>
@@ -115,41 +24,49 @@
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>Get Involved</h1>
-  </div>
-
+  <!-- Main content -->
   <main>
-    <!-- Fellowship Recruitment -->
-    <section>
-      <h2>AI in Hematology Fellowship</h2>
-      <p>
-        We are now recruiting for the <span class="highlight">AI in Hematology Fellowship</span> — a one-year opportunity to leverage machine learning on real-world patient data.
-      </p>
-      <p>
-        Working with large clinical datasets, the fellow will develop and validate predictive models that uncover patterns in rare blood disorders and refine biomarker-driven decision-making. 
-      </p>
-      <p>
-        This is a chance to apply data science where it matters most: <span class="highlight">improving patient care.</span>
-      </p>
-      <p class="apply">
-        👉 <strong>Apply now</strong> to join us at the intersection of hematology and artificial intelligence.
-      </p>
+    <!-- Recruitment Info -->
+    <section class="fellowship-card fellowship-card--with-media">
+      <div class="fellowship-card__content">
+        <h2 class="fellowship-card__title">AI + Hematology Research Opportunities</h2>
+        <p class="fellowship-card__text">
+          We are seeking motivated students and collaborators to join our research at the 
+          Chin-Yee & Hsia Hematology Research Lab. Current opportunities involve applying 
+          <strong>artificial intelligence and computational approaches</strong> to clinical hematology, 
+          focusing on improving diagnosis, risk prediction, and treatment pathways.
+        </p>
+        <p class="fellowship-card__text">
+          If you’re passionate about combining data science, medicine, and innovation, 
+          we’d love to hear from you.
+        </p>
+        <a href="#form" class="btn--apply">Apply Now</a>
+      </div>
+      <div class="fellowship-card__media">
+        <img src="images/ai-lab.jpg" alt="AI research in hematology" style="width:100%; height:100%; object-fit:cover;">
+      </div>
     </section>
 
     <!-- Contact Form -->
-    <section>
-      <h2>Contact Us</h2>
-      <p>
-        Have questions or want to get involved? Fill out the form below and we’ll be in touch.
+    <section id="form" style="margin-top: 3rem; text-align:center;">
+      <h2 style="color: var(--terra); font-family: Poppins, sans-serif; margin-bottom: 1.5rem;">Join Our Team</h2>
+      <p style="max-width: 800px; margin: 0 auto 2rem auto; font-size: 1.1rem; color: var(--text-muted);">
+        Please fill out the form below to express interest in research, internships, or collaborations.
       </p>
-      <!-- Replace the src with your real Microsoft Forms link -->
-      <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=YOUR_FORM_ID_HERE"></iframe>
+
+      <!-- Microsoft Form Embed -->
+      <iframe 
+        src="https://forms.office.com/your-form-link" 
+        width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" 
+        style="border: 2px solid var(--border); border-radius: 12px; box-shadow: 0 4px 12px var(--shadow-accent);">
+        Loading…
+      </iframe>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© The Chin-Yee & Hsia Hematology Research Lab</p>
+    <p>© 2025 Chin-Yee & Hsia Hematology Research Lab</p>
   </footer>
 </body>
 </html>
