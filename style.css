@@ -60,11 +60,14 @@
  }
 
 .site-header_nav a {
-  margin-left: 2rem;
+ text-decoration: none;
+    color: #fff;
 }
-.site-header_nav  {
-  display: flex;
- gap: 2rem;
+
+.site-header_nav {
+  margin-left: auto; 
+  display: flex;    
+  gap: 2rem;        
 }
 
 .site-header_logo a {
