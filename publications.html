@@ -6,38 +6,7 @@
   <title>Publications</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-      color: #333;
-    }
-
-    header {
-      background: var(--dark-color, #222);
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header nav a {
-      color: #fff;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    header nav a.active {
-      text-decoration: underline;
-    }
-
+    
     .hero {
       background: var(--terra); /* orange */
       color: #fff;
@@ -65,13 +34,6 @@
       margin-bottom: 3rem;
     }
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-      color: var(--primary-color, #004080);
-    }
 
     .pubs-list {
       display: grid;
@@ -83,7 +45,7 @@
       background: #fff;
       padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px var(--shadow-accent);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -91,7 +53,7 @@
 
     .pub-card h3 {
       margin-top: 0;
-      color: var(--primary-color, #004080);
+      color: var(--red-anchor);
       font-size: 1.2rem;
     }
 
@@ -124,10 +86,10 @@
   </style>
 </head>
 
-<body>
-  <header>
-    <div class="logo">The Chin-Yee & Hsia Hematology Lab</div>
-    <nav>
+<body class="inner">
+  <header class="site-header">
+    <div class="site-header_logo"> <a href="index.html">The Chin-Yee & Hsia Hematology Lab</a></div>
+    <nav class="site-header_nav">
       <a href="index.html">About</a>
       <a href="team.html">Team</a>
       <a href="publications.html" class="active">Publications</a>
