@@ -863,9 +863,7 @@ footer {
 }
 .btn--outline:hover { background: rgba(75,83,32,.08); }
 
-.centered-text {
-  text-align: center;
-}
+
 
 .padded-text {
   margin-left: 10%;
@@ -877,3 +875,22 @@ footer {
   max-width: 900px;
   margin: 0 auto;
 }
+
+/* Center the section title + content */
+.centered-text {
+  text-align: center;
+}
+
+/* Paragraph block underneath heading */
+.about-spotlight__content {
+  max-width: 800px;   /* keep it readable */
+  margin: 0 auto 2rem auto;  /* center with spacing below */
+  padding: 0 1.5rem;  /* margin from screen edge */
+  text-align: center;
+}
+
+.about-spotlight__content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
