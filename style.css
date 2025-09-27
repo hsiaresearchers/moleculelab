@@ -625,6 +625,7 @@ footer {
     var(--sand);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  padding-top: 6rem;
   padding: clamp(1.75rem, 4vw, 3rem) 0;
 }
  
