@@ -447,7 +447,34 @@ footer {
 
  }
  
- 
+.our-focus {
+  display: grid;
+  grid-template-columns: 1fr; /* single column for mobile */
+  gap: 2rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.our-focus__aside {
+  background: #fff; /* white background*/
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+
+.about-highlights li {
+  margin-bottom: 0.8rem;
+}
+
+/* Desktop layout */
+@media (min-width: 900px) {
+  .our-focus {
+    grid-template-columns: 2fr 1fr; /* content | aside */
+  }
+}
+
 .fellowship-card {
   --card-radius: 16px;
   --card-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
