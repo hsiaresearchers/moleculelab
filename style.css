@@ -28,26 +28,29 @@
 
    --shadow-accent: rgba(181, 82, 57, 0.15);  /* terra-tinted shadow */
 
+     /*body font*/
+      --rb: "Roboto", sans-serif;
+      --rb-weight: 300;
+      --rb-style: normal;
+      --rb-optical-sizing: auto;
+      --rb-variation-settings: "wdth" 100;
  }
  
 /* Global Styles */
 
  body {
 
-   font-family: Lato, sans-serif;
-
+    font-family: var(--rb);
+    font-weight: var(--rb-weight);
+    font-style: var(--rb-style);
+    font-size: 22px;
+    font-optical-sizing: var(--rb-optical-sizing);
+    font-variation-settings: var(--rv-variation-settings);
    margin: 0;
-
    padding: 0;
-
    line-height: 1.6;
-
    background-color: var(--cream);
-
    color: var(--text-strong);
-
-   font-size: 22px;
-
  }
  
 .site-header {
