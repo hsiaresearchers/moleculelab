@@ -593,7 +593,7 @@ footer {
  
 .fellowship-card__title {
   margin: 0;
-  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Ultra", serif;
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   color: var(--red-anchor);
   letter-spacing: 0.2px;
