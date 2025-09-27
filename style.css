@@ -751,12 +751,12 @@ footer {
 .about-spotlight__grid {
   display: grid;
   gap: clamp(1rem, 2vw, 1.5rem);
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr !important;
 }
  
 @media (min-width: 900px) {
   .about-spotlight__grid {
-    grid-template-columns: 1.25fr .9fr; /* content | aside */
+    grid-template-columns: 1fr ; 
     align-items: start;
   }
 }
