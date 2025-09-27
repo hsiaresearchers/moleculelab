@@ -745,7 +745,7 @@ footer {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   color: var(--text-strong);
   max-width: 850px;
-  margin: 0 0 1.25rem;
+  margin: 0 auto 1.25rem;
 }
  
 .about-spotlight__grid {
