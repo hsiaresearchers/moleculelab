@@ -51,7 +51,7 @@
  }
  
 .site-header {
-   font-family: Poppins, sans-serif;
+   font-family: "Michroma", sans-serif;
    display: flex;
    align-items: center;
    background-color: var(--red-anchor);
@@ -89,8 +89,7 @@ body.inner .site-header_nav {
 body.home .site-header {
   justify-content: center;
 }
- 
-/* NAV */
+
 
  nav {
 
@@ -448,120 +447,6 @@ footer {
 
  }
  
-/* Milestones */
-
- #milestones {
-
-   padding: 3rem 1rem;
-
-   background: linear-gradient(to right, var(--sand), var(--cream));
-
-   text-align: center;
-
-   border-top: 4px solid var(--red-anchor);
-
-   margin-top: 3rem;
-
- }
- 
-.accomplishments-title-wrapper {
-
-   max-width: 1200px;
-
-   margin: 0 auto;
-
-   padding-left: 10rem; /* This creates the indent */
-
-   text-align: left;
-
- }
- 
-#accomplishments h2 {
-
-   font-size: 2.5rem;
-
-   margin-bottom: 2rem;
-
-   color: var(--red-anchor);
-
-   text-transform: uppercase;
-
-   letter-spacing: 2px;
-
-   padding-left: 0; /* Remove padding here */
-
-   text-align: left;
-
- }
- 
-.milestone-cards {
-
-   display: grid;
-
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-   gap: 2rem;
-
-   max-width: 1200px;
-
-   margin: 0 auto;
-
- }
- 
-.milestone {
-
-   background: #fff;
-
-   border-left: 6px solid var(--red-anchor);
-
-   border-radius: 15px;
-
-   padding: 1.5rem;
-
-   box-shadow: 0 8px 20px var(--shadow-accent);
-
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-   text-align: left;
-
-   position: relative;
-
-   border: 1px solid var(--border);
-
- }
- 
-.milestone:hover {
-
-   transform: translateY(-6px);
-
-   box-shadow: 0 12px 25px var(--shadow-accent);
-
- }
- 
-.milestone h3 {
-
-   color: var(--red-anchor);
-
-   font-size: 1.4rem;
-
-   margin-top: 0;
-
- }
- 
-.milestone p {
-
-   color: var(--text-strong);
-
-   font-size: 1.05rem;
-
-   margin-top: 0.5rem;
-
-   line-height: 1.4;
-
-   font-weight: 500;
-
- }
-
  
 .fellowship-card {
   --card-radius: 16px;
@@ -606,7 +491,6 @@ footer {
   line-height: 1.55;
 }
  
-/* Optional subtle badge */
 .fellowship-card::before {
   content: "Recruiting";
   position: absolute;
@@ -734,7 +618,7 @@ footer {
 }
  
 .about-spotlight__title {
-  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Michroma", sans-serif;
   font-size: clamp(1.6rem, 3.2vw, 2.2rem);
   color: var(--red-anchor);
   letter-spacing: .2px;
@@ -772,15 +656,7 @@ footer {
   flex-wrap: wrap;
   margin-top: .75rem;
 }
- 
-/* Aside */
-.about-spotlight__aside {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 1rem 1.1rem;
-  box-shadow: 0 8px 22px rgba(0,0,0,.06);
-}
+
  
 .about-badge {
   display: inline-block;
