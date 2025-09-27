@@ -477,7 +477,7 @@ footer {
   .our-focus {
     grid-template-columns: 2fr 1fr; /* content | aside */
   }
-}
+
 
 .fellowship-card {
   --card-radius: 16px;
