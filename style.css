@@ -45,7 +45,7 @@
     font-style: var(--rb-style);
     font-size: 22px;
     font-optical-sizing: var(--rb-optical-sizing);
-    font-variation-settings: var(--rv-variation-settings);
+    font-variation-settings: var(--rb-variation-settings);
    margin: 0;
    padding: 0;
    line-height: 1.6;
@@ -466,6 +466,7 @@ footer {
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: var(--card-shadow);
+}
 
 .about-highlights li {
   margin-bottom: 0.8rem;
