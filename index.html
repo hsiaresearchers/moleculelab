@@ -1,12 +1,10 @@
-<!DOCTYPE html>
+this was the old code: give me this code with the changes <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Our Lab</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="home">
 
@@ -42,54 +40,7 @@
     </nav>
   </header>
 
-  <section id="about" class="about-spotlight">
-  <div class="about-spotlight__inner">
-    <div class="about-spotlight__eyebrow centered-text">About This Team</div>
-    <h2 class="about-spotlight__title centered-text">Bridging the Clinical Lab and the Bedside</h2>
-    <p class="about-spotlight__lead centered-text">
-      At the <strong>Chin-Yee &amp; Hsia Hematology Research Lab</strong>, we connect laboratory insights with real-world clinical decisions to transform care for patients with blood disorders.
-    </p>
-        <div class="about-quote">
-          <p>“We bridge insights between the clinical laboratory and the bedside to transform patient care.”</p>
-          <span>— Lab Mission</span>
-        </div>
-    </div>
-</section>
-
-<section class="our-focus">
-     <div class="focus-content">
-      <h2 class="section-title centered-text">Our Focus</h2>
-        <p class="padded-text">
-          Our research focuses on <strong>improving the early identification of rare hematologic diseases</strong> and studying how <strong>novel biomarkers and AI-driven tools</strong> can guide real-world clinical decision-making. We are also investigating how <strong>clonal evolution in conditions like paroxysmal nocturnal hemoglobinuria (PNH)</strong> shapes disease trajectories over time—linking longitudinal lab findings with patient outcomes.
-        </p>
-      </div>
-      <aside class="our-focus__aside">
-        <ul class="about-highlights">
-          <li><strong>Rare diseases focus:</strong> PNH, immune cytopenias, unexplained cytopenias</li>
-          <li><strong>Biomarkers &amp; AI:</strong> predictive models to sharpen decisions</li>
-          <li><strong>Longitudinal datasets:</strong> linking lab signals to outcomes</li>
-          <li><strong>Training:</strong> hands-on mentorship for students &amp; fellows</li>
-        </ul>
-        <div class="people-actions">
-          <a href="publications.html" class="btn btn--apply">See Publications</a>
-          </div>
-      </aside>
-  </section>
-
-<section class="our-people">
-  <div class="container">
-    <h2 class="section-title centered-text">Our People</h2>
-    <div class="people-content">
-      <div class="people-text">
-        <p class="padded-text">
-          Central to this work is better <strong>communication between laboratory and clinical teams</strong>, ensuring that new evidence, diagnostic reports, and biomarkers are shared clearly and translated into timely, evidence-based decisions. We are equally committed to training the next generation of physician-scientists in a collaborative environment where curiosity drives discovery—and discovery improves lives.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section class="fellowship-card">
+<section class="fellowship-card">
   <div class="fellowship-card__content">
     <h3 class="fellowship-card__title">AI in Hematology Fellowship</h3>
     <p class="fellowship-card__text">
@@ -98,6 +49,69 @@
           with blood disorders.
     </p>
     <a class="btn btn--apply" href="/fellowship">Apply Now</a>
+  </div>
+</section>
+
+  <section id="about" class="about-spotlight">
+  <div class="about-spotlight__inner">
+    <div class="about-spotlight__eyebrow centered-text">About This Team</div>
+    <h2 class="about-spotlight__title centered-text">Bridging the Clinical Lab and the Bedside</h2>
+    <p class="about-spotlight__lead centered-text">
+      At the <strong>Chin-Yee &amp; Hsia Hematology Research Lab</strong>, we connect laboratory insights with real-world clinical decisions to transform care for patients with blood disorders.
+    </p>
+    <div class="about-spotlight__grid">
+      <aside class="about-spotlight__aside">
+        <div class="about-badge">Lab ↔ Clinic</div>
+  
+        <ul class="about-highlights">
+          <li><strong>Rare diseases focus:</strong> PNH, immune cytopenias, unexplained cytopenias</li>
+          <li><strong>Biomarkers &amp; AI:</strong> predictive models to sharpen decisions</li>
+          <li><strong>Longitudinal datasets:</strong> linking lab signals to outcomes</li>
+          <li><strong>Training:</strong> hands-on mentorship for students &amp; fellows</li>
+        </ul>
+  
+        <div class="about-quote">
+          <p>“We bridge insights between the clinical laboratory and the bedside to transform patient care.”</p>
+          <span>— Lab Mission</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="our-focus">
+  <div class="container">
+    <h2 class="section-title centered-text">Our Focus</h2>
+    <div class="focus-content">
+      <div class="focus-text">
+        <p class="padded-text">
+          Our research focuses on <strong>improving the early identification of rare hematologic diseases</strong> and studying how <strong>novel biomarkers and AI-driven tools</strong> can guide real-world clinical decision-making. We are also investigating how <strong>clonal evolution in conditions like paroxysmal nocturnal hemoglobinuria (PNH)</strong> shapes disease trajectories over time—linking longitudinal lab findings with patient outcomes.
+        </p>
+      </div>
+      <div class="focus-image">
+        <img src="images/your-focus-image.jpg" alt="A relevant image representing research focus." />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-people">
+  <div class="container">
+    <h2 class="section-title centered-text">Our People</h2>
+    <div class="people-content">
+      <div class="people-image">
+        <img src="images/your-team-image.jpg" alt="A photo of the research team." />
+      </div>
+      <div class="people-text">
+        <p class="padded-text">
+          Central to this work is better <strong>communication between laboratory and clinical teams</strong>, ensuring that new evidence, diagnostic reports, and biomarkers are shared clearly and translated into timely, evidence-based decisions. We are equally committed to training the next generation of physician-scientists in a collaborative environment where curiosity drives discovery—and discovery improves lives.
+        </p>
+        <div class="people-actions">
+          <a href="publications.html" class="btn btn--apply">See Publications</a>
+          <a href="contact.html" class="btn btn--outline">Get Involved</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -174,4 +188,3 @@
     });
 </body>
 </html>
-
