@@ -616,7 +616,7 @@ footer {
       var(--card-bg);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
   }
-  .fellowship-card__title { color: #f4d7cd; } /* softened anchor for contrast */
+  .fellowship-card__title { color: #cc5200; } /* softened anchor for contrast */
   .fellowship-card::before {
     background: var(--badge-bg);
     color: var(--badge-text);
