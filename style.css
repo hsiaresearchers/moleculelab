@@ -93,6 +93,12 @@ body.home .site-header {
   justify-content: center;
 }
 
+/* Headings use Michroma */
+h1, h2, h3, .section-title, .about-spotlight__title, .fellowship-card__title {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400; /* Michroma only has one weight */
+}
+
 
  nav {
 
