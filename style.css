@@ -785,13 +785,13 @@ footer {
 
 
 .padded-text {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 /* Optional: You may need to adjust the width of the container for a better centered look on larger screens */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
